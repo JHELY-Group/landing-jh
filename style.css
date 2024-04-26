@@ -6,6 +6,7 @@
     font-weight: bold;
     border-radius: 100px;
     padding: 0.5em 2em 0.5em 2em;
+    color:#110648;
 }
 .btn-jh-outline{
     border: 1px solid #D1AE35;
@@ -18,6 +19,7 @@
 .btn-jh-outline:hover{
     background-color: #D1AE35;
     color: #fafafa;
+    color:#110648;
 }
 .text-info {color:#D1AE35 !important}
 img{width: 100%;}
@@ -47,9 +49,9 @@ h1{font-size: 4em !important}
     z-index: -1;
     background: url(https://i.ibb.co/rZQrnGw/polka-squares.png);
 }
-.sectVid iframe{
-    width: 90%;
-    height: 38vh;
+.sectVid video{
+    width: 85%;
+    margin-top: 20%;
 }
 
 p{font-size: 1.2em;}
@@ -86,9 +88,11 @@ p{font-size: 1.2em;}
 li{list-style: none;}
 li img{width: 2em;height: 2em;margin-right: 0.5em;}
 
-.border-jh img{width: 50%;}
+.border-jh img{width: 45%;}
 .border-jh{border: 2px solid #D1AE35 !important;height: 80vh;}
 
+.plans img{transition: 1s transform ease;}
+.plans img:hover{transform: scale(1.2);}
 /*responsive*/
 @media all and (max-width:1000px){
     h1{font-size: 3em !important;}
@@ -97,9 +101,7 @@ li img{width: 2em;height: 2em;margin-right: 0.5em;}
         justify-content: flex-start;
         height: auto;
     }
-    #principal article{
-        width: 95%;
-    }
+    #principal article{width: 95%;}
     .sv2{display:none;}
     .sv1{
         display:block;
@@ -110,10 +112,9 @@ li img{width: 2em;height: 2em;margin-right: 0.5em;}
         width: 14%;
         margin: 0;
     }
+    .paises figcaption{display: none;}
     h2{font-size: 2em !important;}
-    .pqjh figure{
-        width: 35%;
-    }
+    .pqjh figure{width: 35%;}
     .card{width: 100%;}
     .carCont{flex-direction: column !important;}
     .plans{text-align: justify;}
