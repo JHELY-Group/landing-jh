@@ -1,12 +1,19 @@
 .row {margin: 0 !important;}
 .btn-jh{
     background-color: #D1AE35 !important;
-    color: #fafafa;
     font-size: 1.2em;
     font-weight: bold;
     border-radius: 100px;
     padding: 0.5em 2em 0.5em 2em;
     color:#110648;
+}
+.btn-jh2{
+    background-color: #d9534f !important;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 100px;
+    padding: 0.5em 2em 0.5em 2em;
+    color:#fafafa;
 }
 .btn-jh-outline{
     border: 1px solid #D1AE35;
@@ -22,6 +29,7 @@
     color:#110648;
 }
 .text-info {color:#D1AE35 !important}
+.text-danger {color: #110648 !important}
 img{width: 100%;}
 h1{font-size: 4em !important}
 #principal{
@@ -91,8 +99,7 @@ li img{width: 2em;height: 2em;margin-right: 0.5em;}
 .border-jh{border: 2px solid #D1AE35 !important;height: 80vh;}
 
 .plans article{height: 75vh;}
-.plans img{transition: 1s transform ease;}
-.plans img:hover{transform: scale(1.1);}
+.plans h3{font-size: 3em;}
 /*responsive*/
 @media all and (max-width:1000px){
     h1{font-size: 3em !important;}
