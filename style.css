@@ -70,12 +70,11 @@ p{font-size: 1.2em;}
     display: block;
     width: 70%;
     margin-left: 15%;
-    height: 4px;
+    margin-top: 2%;
+    height: 6px;
     background-color: #D1AE35;
     border-radius: 20px;
 }
-
-.tj p{text-align: justify !important;}
 
 .card{
     width: 25%;
@@ -91,8 +90,9 @@ li img{width: 2em;height: 2em;margin-right: 0.5em;}
 .border-jh img{width: 45%;}
 .border-jh{border: 2px solid #D1AE35 !important;height: 80vh;}
 
+.plans article{height: 75vh;}
 .plans img{transition: 1s transform ease;}
-.plans img:hover{transform: scale(1.2);}
+.plans img:hover{transform: scale(1.1);}
 /*responsive*/
 @media all and (max-width:1000px){
     h1{font-size: 3em !important;}
@@ -118,7 +118,10 @@ li img{width: 2em;height: 2em;margin-right: 0.5em;}
     .card{width: 100%;}
     .carCont{flex-direction: column !important;}
     .plans{text-align: justify;}
-    .plans article{margin-bottom: 2em !important;}
+    .plans article{margin-bottom: 2em !important; height: auto;}
+    .plans article div{height: auto !important;}
+    .plans img{width: 100% !important;}
+    .plans p, .plans h3{text-align: start !important;}
     .border-jh{width: 95%;}
     .border-jh h2{font-size: 2.5em;}
     .border-jh img{width: 80%;}
