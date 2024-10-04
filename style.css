@@ -100,6 +100,7 @@ li img{width: 2em;height: 2em;margin-right: 0.5em;}
 
 .plans article{height: 75vh;}
 .plans h3{font-size: 3em;}
+
 /*responsive*/
 @media all and (max-width:1000px){
     h1{font-size: 3em !important;}
