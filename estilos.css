@@ -1,0 +1,136 @@
+.row {margin: 0 !important;}
+.btn-jh{
+    background-color: #D1AE35 !important;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 100px;
+    padding: 0.5em 2em 0.5em 2em;
+    color:#110648;
+}
+.btn-jh2{
+    background-color: #d9534f !important;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 100px;
+    padding: 0.5em 2em 0.5em 2em;
+    color:#fafafa;
+}
+.btn-jh-outline{
+    border: 1px solid #D1AE35;
+    color: #D1AE35;
+    font-size: 1.5em;
+    border-radius: 100px;
+    padding: 0.5em 2em 0.5em 2em;
+    text-decoration: none;
+}
+.btn-jh-outline:hover{
+    background-color: #D1AE35;
+    color: #fafafa;
+    color:#110648;
+}
+.text-info {color:#D1AE35 !important}
+.text-danger {color: #110648 !important}
+img{width: 100%;}
+h1{font-size: 4em !important}
+#principal{
+    height: 85vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#principal article{
+    color: #110648;
+    width: 45%;
+    height: 100%;
+}
+#principal .logo{width: 180px;}
+.sv1{display:none;}
+.sectVid::before {
+    content: "";
+    position: absolute;
+    width: 51%;
+    height: 50%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background: url(https://i.ibb.co/rZQrnGw/polka-squares.png);
+}
+.sectVid video{
+    width: 85%;
+    margin-top: 20%;
+}
+
+p{font-size: 1.2em;}
+
+.paises{height: 15vh;}
+.paises figure{
+    width: 7%;
+    margin: 0 1em 0 1em;
+}
+
+.pqjh{background-color: #110648;}
+
+.sub{margin-left: 0.3em;}
+.sub::after{
+    content: '';
+    display: block;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 2%;
+    height: 6px;
+    background-color: #D1AE35;
+    border-radius: 20px;
+}
+
+.card{
+    width: 25%;
+    background-color: #110648;
+    border: 1px solid #D1AE35;
+    padding: 1em;
+}
+.card img{width: 40%;}
+
+li{list-style: none;}
+li img{width: 2em;height: 2em;margin-right: 0.5em;}
+
+.border-jh img{width: 45%;}
+.border-jh{border: 2px solid #D1AE35 !important;height: 80vh;}
+
+.plans article{height: 75vh;}
+.plans h3{font-size: 3em;}
+
+/*responsive*/
+@media all and (max-width:1000px){
+    h1{font-size: 3em !important;}
+    #principal{
+        flex-direction: column;
+        justify-content: flex-start;
+        height: auto;
+    }
+    #principal article{width: 95%;}
+    .sv2{display:none;}
+    .sv1{
+        display:block;
+        width: 100%;
+    }
+    .paises{height: auto;}
+    .paises figure{
+        width: 14%;
+        margin: 0;
+    }
+    .paises figcaption{display: none;}
+    h2{font-size: 2em !important;}
+    .pqjh figure{width: 35%;}
+    .card{width: 100%;}
+    .carCont{flex-direction: column !important;}
+    .plans{text-align: justify;}
+    .plans article{margin-bottom: 2em !important; height: auto;}
+    .plans article div{height: auto !important;}
+    .plans img{width: 100% !important;}
+    .plans p, .plans h3{text-align: start !important;}
+    .border-jh{width: 95%;}
+    .border-jh h2{font-size: 2.5em;}
+    .border-jh img{width: 80%;}
+}
