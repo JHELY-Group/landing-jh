@@ -1,6 +1,6 @@
 .row {margin: 0 !important;}
 .btn-jh{
-    background-color: #D1AE35 !important;
+    background-color: #a200ff  !important;
     font-size: 1.2em;
     font-weight: bold;
     border-radius: 100px;
@@ -8,7 +8,7 @@
     color:#110648;
 }
 .btn-jh2{
-    background-color: #d9534f !important;
+    background-color: #a200ff !important;
     font-size: 1.2em;
     font-weight: bold;
     border-radius: 100px;
@@ -99,6 +99,10 @@ li img{width: 2em;height: 2em;margin-right: 0.5em;}
 .border-jh{border: 2px solid #D1AE35 !important;height: 80vh;}
 
 .plans h3{font-size: 3em;}
+
+.text-justify {
+    text-align: justify;
+}
 
 /*responsive*/
 @media all and (max-width:1000px){
