@@ -72,6 +72,18 @@ header{
     align-items: center;
 }
 
+.table-active{
+    background: none !important;
+    --bs-table-bg-state: #111010 !important;
+    border: none;
+}
+.table-active td{
+    border: none !important;
+}
+.table-active a{
+    font-size: 1.3em !important;
+}
+
 
 @media all and (max-width: 768px){
     header{
