@@ -6,7 +6,6 @@ body{background-color: #111010;}
 
 header{
     height: 100vh !important;
-    padding-left: 2em;
 }
 
 .bg-image{
@@ -115,7 +114,7 @@ header{
 
 @media all and (max-width: 768px){
     header{
-        padding-left: 2em;
+        padding: 1em;
         justify-content: flex-start !important;
     }
     .bg-image{
