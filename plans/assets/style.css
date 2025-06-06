@@ -112,6 +112,10 @@ header{
     font-size: 2em;
 }
 
+.sellos{
+    height: 80px;
+}
+
 @media all and (max-width: 768px){
     header{
         padding: 1em;
@@ -148,4 +152,18 @@ header{
     100% {
       background-position: 100% center;
     }
+}
+
+/* Acordeon */
+.accordion-button:not(.collapsed){
+    background-color: #d1af35c5 !important;
+}
+
+.accordion-button:focus{
+    border-color: #D1AE35 !important;
+    box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 #D1AE35 !important;
+}
+
+.accordion-body{
+    background-color: #d1af3525 !important;
 }
