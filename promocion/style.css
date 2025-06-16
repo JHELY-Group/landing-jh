@@ -34,12 +34,18 @@
 }
 .form-section {
   background: #fff;
-  padding: 40px;
   border-radius: 15px;
+  padding: 40px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+iframe{
+  height: auto;
 }
 .h1{
   font-size: 2.5em !important;
+}
+.form-img{
+  background: url("contact.jpg") no-repeat center top / cover;
 }
 
 /* Carrucel */
@@ -67,6 +73,9 @@
   }
 
   @media (max-width: 768px) {
+    iframe{
+      height: 50vh;
+    }
     .testimonial {
       flex: 0 0 100%;
     }
