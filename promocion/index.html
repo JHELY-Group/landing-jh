@@ -140,17 +140,28 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="container">
     <div class="form-section mx-auto" style="max-width:600px;">
       <h3 class="text-center mb-4">Completá el formulario y un asesor se contactará</h3>
+
       <form id="contact-form">
         <div class="mb-3">
           <label for="nombre" class="form-label">Nombre completo</label>
           <input type="text" class="form-control" name="nombre" id="nombre" required>
         </div>
         <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" name="email" id="email" required>
+        </div>
+        <div class="mb-3">
           <label for="whatsapp" class="form-label">Número de WhatsApp</label>
-          <input type="number" class="form-control" name="whatsapp" id="whatsapp" required>
+          <div class="input-group">
+            <span class="input-group-text">+</span>
+            <input type="tel" class="form-control" name="whatsapp" id="whatsapp"
+                  pattern="[0-9]{8,15}" inputmode="numeric" required>
+          </div>
+          <small class="form-text text-muted">Incluye el código de país, sin espacios ni signos (+ o -).</small>
         </div>
         <button type="submit" class="btn btn-jh w-100">Quiero empezar</button>
       </form>
+
       <div id="respuesta"></div>
     </div>
   </div>
@@ -161,14 +172,26 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     form.addEventListener('submit', async function(e) {
       e.preventDefault();
       const data = new FormData(form);
-      const response = await fetch('https://script.google.com/macros/s/AKfycbx0zS7NRIhqoJ6M77JLjFyqA35WZoE2pakdJUTcPCUz5rjdtdrD08Wp24Rpsvbu0T0A/exec', {
-        method: 'POST',
-        body: data
-      });
-      const result = await response.text();
-      document.getElementById('respuesta').innerText = result;
-      form.reset();
+
+      try {
+        const response = await fetch('https://script.google.com/macros/s/AKfycbzVhyNkBYeNKY19Z2RyoG8dkkZSFo9z3Y93TGwu1tvjxTwrVqRiFgxZNBgaBrTfJvPY/exec', {
+          method: 'POST',
+          body: data
+        });
+
+        if (!response.ok) {
+          throw new Error(`Error: ${response.status}`);
+        }
+
+        const result = await response.text();
+        document.getElementById('respuesta').innerText = result;
+        form.reset();
+      } catch (error) {
+        document.getElementById('respuesta').innerText = 'Hubo un error al enviar el formulario. Intentalo más tarde.';
+        console.error('Error al enviar:', error);
+      }
     });
+
 
     const track = document.getElementById("testimonialTrack");
     const items = document.querySelectorAll(".testimonial");
