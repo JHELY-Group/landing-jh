@@ -1,0 +1,94 @@
+*{
+  font-family: "Open Sans", sans-serif;
+}
+.hero {
+  background: url("bg-landing.png") no-repeat center center / cover;
+  background-position-y: 50%;
+  transition: opacity 1s ease-in;
+  height: 80vh;
+  border-radius: 0 0 20px 20px;
+}
+.btn-jh{
+  background-color: #D1AE35 !important;
+}
+.text-jh{
+  color: #D1AE35;
+}
+.bg-jh2{
+  background-color: #110648;
+}
+.section {
+  padding: 60px 20px;
+}
+.trust-badges img {
+  height: 50px;
+  margin: 0 15px;
+}
+.form-section {
+  background: #fff;
+  border-radius: 15px;
+  padding: 40px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+iframe{
+  height: auto;
+}
+.h1{
+  font-size: 2.5em !important;
+}
+.form-img{
+  background: url("agente-sonriendo.png") no-repeat bottom;
+  background-size: contain;
+  background-position-x: 80%;
+}
+
+.equal-height {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.equal-height:hover, .equal-height:hover p{
+  background-color: #D1AE35;
+  color: #fff !important;
+}
+
+.border-jh {
+    border: 1px solid #D1AE35 !important;
+}
+
+/* Carrucel */
+  .testimonial-carousel {
+    overflow: hidden;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+  }
+
+  .testimonial-track {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+
+  .testimonial {
+    flex: 0 0 33.3333%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .testimonial p {
+    font-style: italic;
+  }
+
+
+@media (max-width: 768px) {
+  iframe{
+    height: 50vh;
+  }
+  .testimonial {
+    flex: 0 0 100%;
+  }
+}
