@@ -3,9 +3,9 @@
 }
 .hero {
   background: url("bg-landing.png") no-repeat center center / cover;
-  background-position-y: 50%;
+  background-position-y: 40%;
   transition: opacity 1s ease-in;
-  height: 80vh;
+  height: 95vh;
   border-radius: 0 0 20px 20px;
 }
 .btn-jh{
@@ -83,10 +83,33 @@ iframe{
     font-style: italic;
   }
 
+  /* Flecha */
+  .flecha{
+    margin-top: -2em;
+  }
+
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(8px); /* Rebote más pequeño */
+    }
+  }
+
+  .bounce {
+    animation: bounce 3s ease-in-out infinite;
+  }
 
 @media (max-width: 768px) {
+  .section{
+    padding: 40px 0px;
+  }
   iframe{
     height: 50vh;
+  }
+  .form-section{
+    padding: 10px;
   }
   .testimonial {
     flex: 0 0 100%;
