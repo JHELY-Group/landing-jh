@@ -69,6 +69,7 @@ window.addEventListener("resize", () => {
 /*--- Temporizador ---*/
 const mostrarReloj = ()=>{
   fechaFinal = new Date('2025-7-24');
+  fechaFinal.setHours(18);
   fechaActual = new Date();
   dif = fechaFinal - fechaActual;
   segundos = Math.trunc(dif / 1000);
