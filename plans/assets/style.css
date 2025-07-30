@@ -143,12 +143,19 @@ h1{
   }
 
 @media all and (max-width: 768px){
+    .logo-link {
+        width: 28%;
+    }
     header{
         padding: 1em;
         justify-content: flex-start !important;
     }
-    .bg-image{
-        animation: slideBackground 30s linear infinite alternate;
+    h1{
+        font-size: 50px !important;
+        line-height: 55px;
+    }
+    .featured-plan{
+        transform: scale(1);
     }
     .testimonial {
         flex: 0 0 100%;
@@ -158,15 +165,6 @@ h1{
 @media all and (min-width: 1200px){
     header{
         padding-left: 20vh;
-    }
-}
-
-@keyframes slideBackground {
-    0% {
-      background-position: 20% center;
-    }
-    100% {
-      background-position: 100% center;
     }
 }
 
