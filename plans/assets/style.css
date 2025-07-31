@@ -90,27 +90,8 @@ h1{
     background-color: #f9f4e5 !important;
 }
 
-.btn-wsp{
-    height: 70px;
-    width: 70px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 100px;
-    border: 3px solid white;
-    background-color: #D1AE35;
-    position: fixed;
-    bottom: 6%;
-    right: 2%;
-    text-decoration: none;
-}
-
-.btn-wsp span{
-    font-size: 2em;
-}
-
-.sellos{
-    height: 80px;
+#planes .border-float .btn-jh:hover{
+    transform: scale(1);
 }
 
 /* Carrucel */
