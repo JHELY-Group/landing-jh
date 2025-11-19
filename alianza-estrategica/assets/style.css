@@ -1,0 +1,71 @@
+*{
+    font-family: "Open Sans", sans-serif;
+}
+
+h1{
+    font-size: 70px !important;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    line-height: 70px;
+}
+.bg{
+    background: linear-gradient(to bottom, #f9f4e5, #ffffff);
+}
+.hero .h5{
+    line-height: 30px;
+}
+
+.bg-image{
+    background: url("img/agent.jpg") no-repeat center center / cover;
+    background-position-y: 50%;
+    transition: opacity 1s ease-in;
+}
+
+.border-float{
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    cursor: pointer;
+}
+
+.text-jh{
+    color: #D1AE35 !important;
+}
+
+.bg-jh{
+    background-color: #f9f4e5 !important;
+}
+
+.btn-jh{
+    background-color: #D1AE35 !important;
+}
+
+.btn-jh:hover{
+    color: white;
+}
+
+.btn-jh-outline{
+    border: 1px solid #D1AE35 !important;
+    color: #fafafa;
+}
+.btn-jh-outline:hover{
+    background-color: #D1AE35 !important;
+    color: #fafafa;
+}
+
+.text-justify{
+    text-align: justify;
+}
+
+.border-jh{
+    border: 2px solid #D1AE35 !important;
+    background-color: #f9f4e5 !important;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px){
+    h1{
+        font-size:42px !important;
+        line-height:46px !important;
+    }
+}
