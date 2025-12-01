@@ -1,3 +1,38 @@
+// Countdown Timer - Next Monday
+function getNextMonday() {
+    const now = new Date();
+    const dayOfWeek = now.getDay(); // 0 = Sunday, 1 = Monday, etc.
+    const daysUntilMonday = dayOfWeek === 0 ? 1 : (8 - dayOfWeek);
+    
+    const nextMonday = new Date(now);
+    nextMonday.setDate(now.getDate() + daysUntilMonday);
+    nextMonday.setHours(0, 0, 0, 0); // Set to midnight
+    
+    return nextMonday;
+}
+
+function updateCountdown() {
+    const now = new Date();
+    const nextMonday = getNextMonday();
+    const diff = nextMonday - now;
+
+    if (diff <= 0) {
+        // If time is up, get the next Monday again
+        location.reload(); // Reload to recalculate
+        return;
+    }
+
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+    document.getElementById('days').textContent = days.toString().padStart(2, '0');
+    document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+    document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+    document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+}
+
 // Create snowflakes
 function createSnowflakes() {
     const container = document.getElementById('snowflakes');
@@ -28,7 +63,8 @@ function updateGiftStatus() {
             // Unlock the gift
             giftCard.classList.remove('locked');
             giftCard.classList.add('unlocked');
-            giftIcon.remove();
+            giftIcon.classList.remove('locked');
+            giftIcon.classList.add('unlocked');
             giftBtn.classList.remove('btn-locked');
             giftBtn.disabled = false;
             giftBtn.innerHTML = '<i class="bi bi-gift-fill me-2"></i>Reclamar Regalo';
@@ -129,6 +165,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // Initialize
 createSnowflakes();
 updateGiftStatus();
+updateCountdown();
 
 // Update gift status every minute
 setInterval(updateGiftStatus, 60000);
+
+// Update countdown every second
+setInterval(updateCountdown, 1000);
