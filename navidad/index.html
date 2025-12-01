@@ -35,8 +35,14 @@
   /></noscript>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Pre-Landing Navidad · JHELY</title>
-  <link rel="stylesheet" href="assets/styles.css">
+  <title>Navidad en JHELY 2025</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+  <link href="assets/styles.css" rel="stylesheet">
+  <link rel="icon" href="assets/favicon.webp" sizes="32x32">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -56,51 +62,290 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     ttq.page();
   }(window, document, 'ttq');
   </script>
-  <!-- TikTok Pixel Code End -->
- 
-  <!-- Line-art SVG background -->
-  <div class="lineart" aria-hidden="true">
-    <svg viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
-      <!-- skyline / rooftops -->
-      <path d="M0 700 L60 620 L120 650 L200 560 L260 600 L360 540 L450 580 L520 530 L620 560 L700 500 L760 540 L820 500 L900 560 L980 520 L1060 560 L1120 520 L1200 560 L1300 520 L1400 560 L1500 520 L1600 560">
-      <!-- simple pine trees -->
-      <path d="M80 720 L100 660 L120 720 M130 720 L150 660 L170 720 M320 720 L340 660 L360 720 M540 720 L560 660 L580 720 M820 720 L840 660 L860 720">
-      <!-- gift lineart -->
-      <path d="M1180 640 h60 v60 h-60 z M1210 640 v-18 M1240 640 v-18">
-    </svg>
+  <div class="urgency-banner">
+      <i class="bi bi-clock-history me-2"></i>
+      <strong>¡Cada lunes de diciembre un nuevo regalo!</strong> No pierdas esta oportunidad única.
   </div>
 
-  <main class="wrap" role="main">
-    <section class="hero" aria-labelledby="hero-title">
-      <h1 id="hero-title">Regalos inmobiliarios navideños.</h1>
-      <p class="lead">En diciembre lanzamos el Calendario de Regalos para Agentes. Deja tu email y serás el primero en desbloquear sorpresas cada semana.</p>
+  <!-- Snowflakes -->
+  <div id="snowflakes"></div>
 
-      <h3>Sé de los primeros en enterarte</h3>
-      <p>Ingresa tu email y te avisaremos cuando abramos el calendario.</p>
-      <form id="leadForm">
-        <div class="form-row">
-          <input type="email" id="email" placeholder="tu@correo.com" required>
-          <button class="submit" type="submit">Avisáme</button>
-        </div>
-      </form>
-      <p id="mensaje"></p>
-
-      <div class="countdown" aria-hidden="false">
-        <div class="chip"><div class="num" id="days">0</div><div class="lbl">Días</div></div>
-        <div class="chip"><div class="num" id="hours">0</div><div class="lbl">Horas</div></div>
-        <div class="chip"><div class="num" id="minutes">0</div><div class="lbl">Min</div></div>
-        <div class="chip"><div class="num" id="seconds">0</div><div class="lbl">Seg</div></div>
+  <!-- Hero Section -->
+  <section class="hero-section">
+      <div class="container">
+          <div class="hero-content d-flex flex-column align-items-center justify-content-center">
+              <figure class="logo-christmas col-6">
+                  <img src="assets/jhely-logo-extended.png" class="img-fluid">
+              </figure>
+              <div class="christmas-badge">
+                  <i class="bi bi-gift-fill me-2"></i>CAMPAÑA NAVIDEÑA 2024
+              </div>
+              <h1 class="hero-title">
+                  5 Regalos Para Empezar <br>Diciembre Con El Pie Derecho
+              </h1>
+              <p class="hero-subtitle">
+                  Cada lunes de diciembre, un nuevo regalo exclusivo para agentes inmobiliarios registrados en JHELY Global
+              </p>
+              <a href="#timeline" class="btn btn-claim-hero">
+                  <i class="bi bi-gift me-2"></i>Ver Mis Regalos
+              </a>
+          </div>
       </div>
+  </section>
 
-      <p class="note">Lanzamiento: 1 de diciembre de 2025</p>
-    </section>
-  </main>
+  <!-- About Section -->
+  <section class="about-section">
+      <div class="container">
+          <div class="row align-items-center">
+              <div class="col-lg-6 mb-4 mb-lg-0">
+                  <h2 class="section-title">¿Quiénes Somos?</h2>
+                  <p class="lead mt-4">
+                      <strong>JHELY Global</strong> es el portal inmobiliario internacional que conecta propiedades de América y Europa con compradores de todo el mundo.
+                  </p>
+                  <p class="text-muted">
+                      Con presencia en 7 países y un equipo internacional de expertos, ayudamos a agentes inmobiliarios a multiplicar su alcance publicando propiedades en 18 idiomas y exponiéndolas a miles de compradores globales que toman decisiones cada día.
+                  </p>
+                  <div class="mt-4">
+                      <div class="d-flex align-items-center mb-3">
+                          <i class="bi bi-check-circle-fill text-success fs-4 me-3"></i>
+                          <span><strong>18 idiomas</strong> de traducción automática</span>
+                      </div>
+                      <div class="d-flex align-items-center mb-3">
+                          <i class="bi bi-check-circle-fill text-success fs-4 me-3"></i>
+                          <span><strong>8 países</strong> de América y Europa</span>
+                      </div>
+                      <div class="d-flex align-items-center">
+                          <i class="bi bi-check-circle-fill text-success fs-4 me-3"></i>
+                          <span><strong>24/7</strong> visibilidad internacional</span>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-6 text-center">
+                  <i class="bi bi-globe2" style="font-size: 15rem; color: var(--jhely-primary); opacity: 0.1;"></i>
+              </div>
+          </div>
+      </div>
+  </section>
 
-  <!-- small footer -->
-  <div class="footer">JHELY GLOBAL • Pre-landing • Campaña navideña</div>
+  <!-- Reasons Section -->
+  <section class="reasons-section">
+      <div class="container">
+          <div class="text-center mb-5">
+              <h2 class="section-title">5 Razones Para Estar en JHELY Global</h2>
+              <p class="lead text-muted mt-3">Por qué los agentes más exitosos ya están expandiendo su alcance internacional</p>
+          </div>
 
-  <!-- snowflakes generated by JS (emoji) -->
-  <script src="assets/script.js">
-  </script>
+          <div class="row">
+              <div class="col-lg-10 mx-auto">
+                  <div class="reason-card">
+                      <div class="reason-number">01</div>
+                      <div style="position: relative; z-index: 1;">
+                          <h4 class="mb-3" style="color: var(--jhely-primary);">
+                              <i class="bi bi-globe me-2"></i>El mercado se mueve con o sin ti
+                          </h4>
+                          <p class="mb-0">
+                              El mercado internacional se mueve con o sin tu inventario. Si no estás donde circula el tráfico realmente interesado, tus propiedades simplemente no existen para miles de compradores globales que hoy toman decisiones en otros portales.
+                          </p>
+                      </div>
+                  </div>
+
+                  <div class="reason-card">
+                      <div class="reason-number">02</div>
+                      <div style="position: relative; z-index: 1;">
+                          <h4 class="mb-3" style="color: var(--jhely-primary);">
+                              <i class="bi bi-translate me-2"></i>Tu competencia ya habla 18 idiomas
+                          </h4>
+                          <p class="mb-0">
+                              La competencia ya se está traduciendo a 18 idiomas. Cada día que tus títulos y descripciones no están adaptados al mundo, pierdes alcance y tus oportunidades viajan menos que las de otros agentes más preparados.
+                          </p>
+                      </div>
+                  </div>
+
+                  <div class="reason-card">
+                      <div class="reason-number">03</div>
+                      <div style="position: relative; z-index: 1;">
+                          <h4 class="mb-3" style="color: var(--jhely-primary);">
+                              <i class="bi bi-arrow-up-right-circle me-2"></i>El confort te deja fuera del crecimiento
+                          </h4>
+                          <p class="mb-0">
+                              Quedarte en tu zona de confort te deja fuera de los mercados que crecen. Los empresarios e inmobiliarias que ya están escalando en JHELY ganan presencia profesional mientras otros siguen operando como si el mercado fuera solo local.
+                          </p>
+                      </div>
+                  </div>
+
+                  <div class="reason-card">
+                      <div class="reason-number">04</div>
+                      <div style="position: relative; z-index: 1;">
+                          <h4 class="mb-3" style="color: var(--jhely-primary);">
+                              <i class="bi bi-moon-stars me-2"></i>La demanda internacional nunca duerme
+                          </h4>
+                          <p class="mb-0">
+                              La demanda internacional no duerme, pero tu inventario sí, si no está visible. Europa y América se mueven a ritmos distintos. Si tus propiedades no están expuestas en mercados múltiples, pierdes compradores mientras estás desconectado.
+                          </p>
+                      </div>
+                  </div>
+
+                  <div class="reason-card">
+                      <div class="reason-number">05</div>
+                      <div style="position: relative; z-index: 1;">
+                          <h4 class="mb-3" style="color: var(--jhely-primary);">
+                              <i class="bi bi-calendar-event me-2"></i>Los inversores operan 24/7
+                          </h4>
+                          <p class="mb-0">
+                              Los inversores operan 24/7 aunque en tu país sea festivo o invierno. Mientras tú te desconectas, otros agentes conectan con compradores que están en temporadas altas de bastante movimiento y listos para invertir. Mientras tú estás en verano, los países de JHELY Global están en invierno y viceversa, y las oportunidades se mueven sin esperar. No estar en JHELY Global significa abandonar tu oportunidad.
+                          </p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- Timeline Section -->
+  <section class="timeline-section" id="timeline">
+      <div class="container">
+          <div class="text-center mb-5">
+              <h2 class="section-title">Tus Regalos de Diciembre</h2>
+              <p class="lead text-muted mt-3">Cada lunes se desbloquea un nuevo regalo. ¡Reclama el tuyo!</p>
+          </div>
+
+          <div class="timeline-container">
+              <div class="timeline-line"></div>
+
+              <!-- Gift 1 -->
+              <div class="gift-item" data-gift="1" data-unlock-date="2025-12-01">
+                  <div class="gift-content">
+                      <div class="gift-card">
+                          <span class="week-badge">Lunes 2 de Diciembre</span>
+                          <h3 class="gift-title">2 Propiedades en Full Color</h3>
+                          <p class="gift-description">Destaca 2 de tus propiedades con fotografías a todo color en la página principal y resultados de búsqueda.</p>
+                          <button class="btn btn-claim gift-btn" onclick="openClaimModal('2 Propiedades Destacadas en Full Color')">
+                              <i class="bi bi-gift-fill me-2"></i>Reclamar Regalo
+                          </button>
+                      </div>
+                  </div>
+                  <div class="d-none d-md-flex gift-icon-wrapper">
+                      <i class="bi bi-images gift-icon"></i>
+                  </div>
+              </div>
+
+              <!-- Gift 2 -->
+              <div class="gift-item" data-gift="2" data-unlock-date="2025-12-08">
+                  <div class="gift-content">
+                      <div class="gift-card">
+                          <span class="week-badge">Lunes 9 de Diciembre</span>
+                          <h3 class="gift-title">1 Propiedad en Primeros Lugares</h3>
+                          <p class="gift-description">Tu propiedad aparecerá en los primeros resultados de búsqueda durante toda la semana.</p>
+                          <button class="btn btn-claim gift-btn" onclick="openClaimModal('1 Propiedad en los Primeros Lugares')">
+                              <i class="bi bi-gift-fill me-2"></i>Reclamar Regalo
+                          </button>
+                      </div>
+                  </div>
+                  <div class="d-none d-md-flex gift-icon-wrapper">
+                      <i class="bi bi-trophy gift-icon"></i>
+                  </div>
+              </div>
+
+              <!-- Gift 3 -->
+              <div class="gift-item" data-gift="3" data-unlock-date="2025-12-15">
+                  <div class="gift-content">
+                      <div class="gift-card">
+                          <span class="week-badge">Lunes 16 de Diciembre</span>
+                          <h3 class="gift-title">1 Propiedad en Carrusel Internacional</h3>
+                          <p class="gift-description">Exposición premium en el carrusel internacional visible en todos los países de JHELY Global.</p>
+                          <button class="btn btn-claim gift-btn" onclick="openClaimModal('1 Propiedad en el Carrusel Internacional')">
+                              <i class="bi bi-gift-fill me-2"></i>Reclamar Regalo
+                          </button>
+                      </div>
+                  </div>
+                  <div class="d-none d-md-flex gift-icon-wrapper">
+                      <i class="bi bi-view-list gift-icon"></i>
+                  </div>
+              </div>
+
+              <!-- Gift 4 -->
+              <div class="gift-item" data-gift="4" data-unlock-date="2025-12-22">
+                  <div class="gift-content">
+                      <div class="gift-card">
+                          <span class="week-badge">Lunes 23 de Diciembre</span>
+                          <h3 class="gift-title">Promoción en Redes Sociales Pagas</h3>
+                          <p class="gift-description">Tu propiedad será promocionada en campañas pagas de Facebook e Instagram por nuestro equipo de marketing.</p>
+                          <button class="btn btn-claim gift-btn" onclick="openClaimModal('1 Promoción en Redes Sociales Pagas')">
+                              <i class="bi bi-gift-fill me-2"></i>Reclamar Regalo
+                          </button>
+                      </div>
+                  </div>
+                  <div class="d-none d-md-flex gift-icon-wrapper">
+                      <i class="bi bi-megaphone gift-icon"></i>
+                  </div>
+              </div>
+
+              <!-- Gift 5 -->
+              <div class="gift-item" data-gift="5" data-unlock-date="2025-12-29">
+                  <div class="gift-content">
+                      <div class="gift-card">
+                          <span class="week-badge">Lunes 30 de Diciembre</span>
+                          <h3 class="gift-title">Regalo Secreto</h3>
+                          <p class="gift-description">Un regalo especial de fin de año que revelamos solo a quienes lleguen hasta aquí. ¡Vale la pena la espera!</p>
+                          <button class="btn btn-claim gift-btn" onclick="openClaimModal('Regalo Secreto')">
+                              <i class="bi bi-gift-fill me-2"></i>Reclamar Regalo
+                          </button>
+                      </div>
+                  </div>
+                  <div class="d-none d-md-flex gift-icon-wrapper">
+                      <i class="bi bi-question-circle-fill gift-icon"></i>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-4">
+      <div class="container">
+          <p class="mb-2">© 2024 JHELY Global. Todos los derechos reservados.</p>
+          <p class="mb-0 text-muted">Portal Inmobiliario Internacional</p>
+      </div>
+  </footer>
+
+  <!-- Claim Modal -->
+  <div class="modal fade" id="claimModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">
+                    <i class="bi bi-gift-fill me-2"></i>Reclamar Mi Regalo
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div class="alert alert-info">
+                    <i class="bi bi-info-circle me-2"></i>
+                    Ingresa los datos que usaste para registrarte en JHELY Global
+                </div>
+                <div id="respuesta" class="mb-3"></div>
+                <form id="claimForm">
+                    <div class="mb-3">
+                        <label for="claimName" class="form-label">Nombre Completo</label>
+                        <input type="text" class="form-control" id="claimName" name="nombre" required placeholder="Tu nombre completo">
+                    </div>
+                    <div class="mb-3">
+                        <label for="claimEmail" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="claimEmail" name="email" required placeholder="email@ejemplo.com">
+                    </div>
+                    <input type="hidden" id="giftType" name="regalo">
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-submit-claim">
+                            <i class="bi bi-check-circle me-2"></i>Reclamar Regalo
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/script.js"></script>
 </body>
 </html>
