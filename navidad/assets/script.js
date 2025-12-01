@@ -63,7 +63,7 @@ function updateGiftStatus() {
             // Unlock the gift
             giftCard.classList.remove('locked');
             giftCard.classList.add('unlocked');
-            giftIcon.classList.remove();
+            giftIcon.remove();
             giftBtn.classList.remove('btn-locked');
             giftBtn.disabled = false;
             giftBtn.innerHTML = '<i class="bi bi-gift-fill me-2"></i>Reclamar Regalo';
