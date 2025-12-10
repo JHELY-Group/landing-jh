@@ -117,7 +117,7 @@ form.addEventListener('submit', async function(e) {
     submitBtn.innerHTML = '<i class="bi bi-hourglass-split me-2"></i>Enviando...';
 
     try {
-        const response = await fetch('https://script.google.com/a/macros/jhely.com/s/AKfycbyJ38-KJYul0aIY5ka7y3w-nhsIHePQUXP_d-lCLPZ6-Hlf4fkP4AVAK9HVx4MG_204Ew/exec', {
+        const response = await fetch('https://script.google.com/macros/s/AKfycbyJ38-KJYul0aIY5ka7y3w-nhsIHePQUXP_d-lCLPZ6-Hlf4fkP4AVAK9HVx4MG_204Ew/exec', {
             method: 'POST',
             body: data
         });
