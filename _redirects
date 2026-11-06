@@ -1,0 +1,6 @@
+# lp.jhely.com is retired (JHELY Global management report 2026-11-05, P0-01/02/03).
+# No free plans or old promotions exist any more. Every path, including the
+# legacy document.php / wsoo.php / userfiles URLs, gets a permanent redirect to
+# the current plans page; jhely.com then routes the visitor to /{country}/plans.
+/                  https://jhely.com/plans  301
+/*                 https://jhely.com/plans  301
